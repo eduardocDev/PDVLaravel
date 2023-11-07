@@ -33,13 +33,6 @@ services:
     environment:
       - PMA_ARBITRARY=1
 
-  alpine:
-    image: alpine:latest
-    networks:
-      - app-network
-    ports:
-      - 5050:80
-  
 networks:
   app-network:
     driver: bridge
